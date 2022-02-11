@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+.app-container {
+  @apply max-w-xl mx-auto my-20;
+}
+
+.app-title {
+  @apply mb-2 text-2xl font-semibold text-center text-gray-700 uppercase;
+}
+
+.composer {
+  @apply border-t-2 border-indigo-500;
+}
+
+.composer__input {
+  @apply w-full p-5 bg-gray-100 border-none focus:outline-none focus:ring-0;
+}
+
+.filter {
+  @apply flex justify-between mt-1;
+}
+
+.filter__left {
+  @apply flex space-x-4;
+}
+
+.filter__button {
+  @apply text-slate-700;
+}
+
+.filter__button--active {
+  @apply text-indigo-500;
+}
+
+.filter__button--danger {
+  @apply text-red-600;
+}
+
+.todos {
+  @apply flex flex-col space-y-1;
+}
+.todo {
+  @apply flex items-center py-4 pl-4 space-x-4 transition-all duration-200 border-l-4 border-yellow-400 cursor-pointer hover:bg-gray-100;
+}
+
+.todo__status-dot {
+  @apply flex-none w-2 h-2 bg-yellow-400 rounded-full;
+}
+
+.todo__content {
+  @apply text-gray-700;
+}
+
+.todo__time {
+  @apply text-gray-600;
+}
+
+.todo--done {
+  @apply border-green-500;
+}
+
+.todo--done .todo__status-dot {
+  @apply bg-green-500;
+}
